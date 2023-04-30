@@ -1,4 +1,4 @@
-TASK: Perform a Text Classification on consumer complaint dataset.
+# TASK: Perform a Text Classification on consumer complaint dataset.
 
 
 In this post, I show how to classify consumer complaints text into these categories: Debt collection, Consumer Loan, Mortgage, Credit card, Credit reporting, Student loan, Bank account or service, Payday loan, Money transfers, Other financial service, Prepaid card.
@@ -14,7 +14,7 @@ I trained a text classifier with 3583117 of data on customers that have made a c
 This dataset is relatively large and this kind of machine learning process requires more compute power so I chose to use Google’s colab, which gives the option to train a model with free GPU. 
 I will walk through the steps and in the end, we will classify new complaints and see how the model performed.
 
-STEPS TO BE FOLLOWED -
+## STEPS TO BE FOLLOWED 
 1. Explanatory Data Analysis and Feature Engineering
 2. Text Pre-Processing
 3. Selection of Multi Classification model
@@ -22,7 +22,7 @@ STEPS TO BE FOLLOWED -
 5. Model Evaluation
 6. Prediction
 
-GENERAL APPROACH -
+## GENERAL APPROACH 
 1. Convert the complaint text into its numerical representation using TF-IDF scores.
 2. Convert the product classes into numbers using label encoding.
 3. Create a conventional machine learning model to complete the task. Since this is NLP, hence we have chosen to work with truncated data.
