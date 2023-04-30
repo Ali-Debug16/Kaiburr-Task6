@@ -1,4 +1,4 @@
-# TASK: Perform a Text Classification on consumer complaint dataset.
+# TASK: Perform A Text Classification On Consumer Complaint Dataset.
 
 
 In this post, I show how to classify consumer complaints text into these categories: Debt collection, Consumer Loan, Mortgage, Credit card, Credit reporting, Student loan, Bank account or service, Payday loan, Money transfers, Other financial service, Prepaid card.
