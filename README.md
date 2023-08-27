@@ -1,28 +1,56 @@
-# TASK: Perform A Text Classification On Consumer Complaint Dataset.
+# TASK: You need to run Activity recognition using pose estimation on this video:.
 
 
-In this post, I show how to classify consumer complaints text into these categories: Debt collection, Consumer Loan, Mortgage, Credit card, Credit reporting, Student loan, Bank account or service, Payday loan, Money transfers, Other financial service, Prepaid card.
+This repository contains code and instructions for performing activity recognition using the I3D Kinetics-400 model on video data. The I3D model is a deep learning architecture that has been pre-trained on a large video dataset and is capable of recognizing a wide range of human actions and activities.
 
-This kind of model will be very useful for a customer service department that wants to classify the complaints they receive from their customers. The classification of the issues they have received into buckets will help the department to provide customized solutions to the customers in each group.
+# Table of Contents
+Introduction
+Prerequisites
+Getting Started
+Usage
+Sample Video Analysis
+Contributing
+License
+Introduction
+Activity recognition is the process of identifying and categorizing human actions or activities within video data. The I3D Kinetics-400 model is a powerful deep learning model designed for this purpose. It has been trained on a dataset containing 400 different activities, enabling it to predict actions and their corresponding probabilities from video frames.
 
-This model can also be expanded into a system, that can recommend automatic solutions to future complaints as they come in. In the past, performing these kinds of tasks were done manually by multiple employees and of course, take a long time to accomplish, delaying swift response to the complaints received.
+Prerequisites
+Before you begin, ensure you have the following:
 
-Machine learning and AI are here to solve this caliber of problems. Imagine you can classify new complaints with 95% accuracy and route them to the right team to resolve the issue. That will be a win and time saving to any business. Your customers will be happy because the right expert from your business will talk to your customers in trying to resolving their complaints. This will translate into lowering churning rate which means more revenue.
+Python (>=3.6)
+Required packages: tensorflow, tensorflow_hub, numpy, cv2, imageio, IPython
+Access to the internet to download the model and video data
+Getting Started
+Clone this repository to your local machine:
 
-I trained a text classifier with 3583117 of data on customers that have made a complaint to consumer financial protection bureau - CFPB about US financial institutions on the services they have rendered to these consumers. The dataset can be found in this link https://catalog.data.gov/dataset/consumer-complaint-database.
+bash
+Copy code
+git clone https://github.com/Ali-Debug/activity-recognition-i3d.git
+Navigate to the project directory:
 
-This dataset is relatively large and this kind of machine learning process requires more compute power so I chose to use Google’s colab, which gives the option to train a model with free GPU. 
-I will walk through the steps and in the end, we will classify new complaints and see how the model performed.
+bash
+Copy code
+cd activity-recognition-i3d
+Install the required packages. You can use the following command:
 
-## STEPS TO BE FOLLOWED 
-1. Explanatory Data Analysis and Feature Engineering
-2. Text Pre-Processing
-3. Selection of Multi Classification model
-4. Comparison of model performance
-5. Model Evaluation
-6. Prediction
+bash
+Copy code
+pip install -r requirements.txt
+Usage
+Run the Jupyter Notebook provided in the repository (activity_recognition_i3d.ipynb) using Jupyter or JupyterLab.
 
-## GENERAL APPROACH 
-1. Convert the complaint text into its numerical representation using TF-IDF scores.
+The notebook guides you through the following steps:
+
+Fetching a random video from the UCF101 dataset.
+Loading and processing the video frames.
+Predicting activities using the I3D Kinetics-400 model.
+Displaying the top predicted activities along with their probabilities.
+Sample Video Analysis
+The notebook includes sample video analyses to showcase the model's activity recognition capabilities. It demonstrates how to load video frames, make predictions, and display the results. The results are presented as the top predicted activities along with their corresponding probabilities.
+
+Contributing
+Contributions to this project are welcome. If you have any suggestions, improvements, or bug fixes, feel free to submit a pull request.
+
+
 2. Convert the product classes into numbers using label encoding.
 3. Create a conventional machine learning model to complete the task. Since this is NLP, hence we have chosen to work with truncated data.
