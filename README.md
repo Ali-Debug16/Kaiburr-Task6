@@ -3,15 +3,8 @@
 
 This repository contains code and instructions for performing activity recognition using the I3D Kinetics-400 model on video data. The I3D model is a deep learning architecture that has been pre-trained on a large video dataset and is capable of recognizing a wide range of human actions and activities.
 
-# Table of Contents
-Introduction
-Prerequisites
-Getting Started
-Usage
-Sample Video Analysis
-Contributing
-License
-Introduction
+
+ #  Introduction
 Activity recognition is the process of identifying and categorizing human actions or activities within video data. The I3D Kinetics-400 model is a powerful deep learning model designed for this purpose. It has been trained on a dataset containing 400 different activities, enabling it to predict actions and their corresponding probabilities from video frames.
 
 Prerequisites
