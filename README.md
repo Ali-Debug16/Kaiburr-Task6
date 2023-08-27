@@ -18,7 +18,7 @@ Clone this repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/Ali-Debug/activity-recognition-i3d.git
+git clone https://github.com/Ali-Debug/activity-recognition-i3d.git](https://github.com/Ali-Debug16/Kaiburr-Task6/blob/main/Activity%20recognition%20using%20pose%20estimation.ipynb)
 Navigate to the project directory:
 
 bash
